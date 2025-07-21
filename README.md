@@ -28,8 +28,8 @@
 
 <p align="center">
   <!-- Replace with your actual YouTube video link or hosted video -->
-  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">
-    <img src="assets/video_preview.png" alt="Watch the Gameplay Video" width="70%"/>
+  <a href="https://youtube.com/shorts/UBmsuI1fk6E?feature=share" target="_blank">
+    <img src="assets/screenshot1.png" alt="Watch the Gameplay Video" width="30%"/>
   </a>
 </p>
 
@@ -147,7 +147,7 @@ All systems are **data-driven** → **no engine changes required**.
 </p>
 
 <p align="center">
-  ▶️ <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Gameplay Video</a>
+  ▶️ <a href="https://youtube.com/shorts/UBmsuI1fk6E?feature=share" target="_blank">Watch Gameplay Video</a>
 </p>
 
 ---
