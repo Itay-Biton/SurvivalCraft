@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="SurvivalCraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-Sg-ldU">
+                                <rect key="frame" x="32" y="760" width="350" height="64"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CIc-zV-Da9">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="64"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qdH-E2-kvL">
+                                        <rect key="frame" x="71.5" y="0.0" width="63.5" height="64"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kPV-9a-KjZ">
+                                        <rect key="frame" x="143" y="0.0" width="64" height="64"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rhk-Sc-NQi">
+                                        <rect key="frame" x="215" y="0.0" width="63.5" height="64"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aMj-7n-Wtv">
+                                        <rect key="frame" x="286.5" y="0.0" width="63.5" height="64"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Ma1-59-2qx"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMn-vm-3qa">
+                                <rect key="frame" x="342" y="176" width="64" height="64"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="ESy-Jg-X7a"/>
+                                    <constraint firstAttribute="height" constant="64" id="Ptz-rc-4Dm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="inventory"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openInventory:" destination="BV1-FR-VrT" eventType="touchUpInside" id="f9n-om-zTI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-KY-yOm">
+                                <rect key="frame" x="342" y="256" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="5SH-vC-jiw"/>
+                                    <constraint firstAttribute="width" constant="64" id="l3A-GK-d2P"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="craft"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="openCrafting:" destination="BV1-FR-VrT" eventType="touchUpInside" id="1VP-KC-LTN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a45-lA-krG">
+                                <rect key="frame" x="342" y="96" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="5DE-cu-8Ag"/>
+                                    <constraint firstAttribute="width" constant="64" id="sFK-Qq-woj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="menu"/>
+                                <connections>
+                                    <action selector="togglePause:" destination="BV1-FR-VrT" eventType="touchUpInside" id="jJc-yI-uag"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZOH-Sg-ldU" secondAttribute="bottom" constant="72" id="7tQ-fx-8MQ"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="ZOH-Sg-ldU" secondAttribute="trailing" constant="32" id="INY-Uj-Eok"/>
+                            <constraint firstItem="5pq-KY-yOm" firstAttribute="top" secondItem="aMn-vm-3qa" secondAttribute="bottom" constant="16" id="KQR-GC-od1"/>
+                            <constraint firstItem="a45-lA-krG" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="KsL-EE-9tZ"/>
+                            <constraint firstItem="ZOH-Sg-ldU" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="32" id="PL6-Iv-mrL"/>
+                            <constraint firstItem="ZOH-Sg-ldU" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="VTe-z8-5df"/>
+                            <constraint firstItem="aMn-vm-3qa" firstAttribute="top" secondItem="a45-lA-krG" secondAttribute="bottom" constant="16" id="Va2-PL-cat"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="aMn-vm-3qa" secondAttribute="trailing" constant="8" id="YyU-8f-rpb"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="5pq-KY-yOm" secondAttribute="trailing" constant="8" id="n1p-fG-RgY"/>
+                            <constraint firstAttribute="trailing" secondItem="a45-lA-krG" secondAttribute="trailing" constant="8" id="xGZ-TK-WiQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="craftingView" destination="5pq-KY-yOm" id="f4L-Kq-GbP"/>
+                        <outlet property="hotbarStackView" destination="ZOH-Sg-ldU" id="yPt-AN-dqe"/>
+                        <outlet property="invantoryView" destination="aMn-vm-3qa" id="Nvx-XM-bP4"/>
+                        <outlet property="pauseView" destination="a45-lA-krG" id="1Ev-Jn-1Ee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.00763358778624" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="craft" width="32" height="32"/>
+        <image name="inventory" width="32" height="32"/>
+        <image name="menu" width="64" height="64"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
